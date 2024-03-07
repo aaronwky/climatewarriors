@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enerprof</title>
+    <link rel="stylesheet" href="home.css">
+    <script>
+        function authenticate() {
+            // Retrieve the username and password from the form
+            var username = document.getElementsByName("username")[0].value;
+            var password = document.getElementsByName("password")[0].value;
+
+            // Check if the username and password match the authentication criteria
+            if (username === "enerprof" && password === "12345") {
+                alert("Login successful!");
+                // You can redirect to another page using window.location.href = "homepage.html";
+                window.location.href = "overview.html";
+            } else {
+                // If not authenticated, display an error message
+                alert("Invalid username or password. Please try again.");
+            }
+
+            // Prevent the default form submission behavior
+            return false;
+        }
+    </script>
+</head>
+<body>
+
+<!-- Login form container -->
+<div class="login-container">
+    <form class="login-form" onsubmit="return authenticate()" method="POST">
+        <div style="margin-top:20%;"></div>
+        <img src="images/Pizza.png" alt="Enerprof" style="width: 80%; margin:auto; display:flex; margin-bottom: 40px;">
+        <input type="text" name="username" placeholder="Username">
+        <input type="password" name="password" placeholder="Password">
+        <input type="submit" value="Log In">
+    </form>
+    <div class="forgot-password">
+        <a href="#">Forgot password?</a>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <script src="tableau.js"></script>
+</head>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    h2 {
+        text-align: center;
+    }
+    .sidebar {
+        float: left;
+        width: 200px;
+        height:800px;
+        background-color: #aac8f0;
+        margin-top:7px;
+    }
+    .sidebar a {
+        display: block;
+        padding: 10px;
+        color: black;
+        text-decoration: none;
+    }
+    .sidebar a.active {
+        background-color: #506ea6;
+        color: white;
+    }
+    
+</style>
+</head>
+<body onload="initViz();">
+
+<div class="sidebar">
+    <h2>ENERPROF AUDIT</h2>
+    <hr>
+    <a href="overview.html">Overview</a>
+    <!-- <a href="data.html"style="padding-left:10%;"> > Mall Data</a> -->
+    <a href="#" class = "active" style="padding-left:10%;">> Dashboard</a>
+    <a href="home.html">Log Out</a>
+</div>
+
+<div id="tableauViz" style="text-align:center; width:1500px; height: 1000px;"></div>
+
+
+<script>
+    </script>
+
+</body>
+</html>
