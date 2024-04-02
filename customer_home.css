@@ -1,0 +1,21 @@
+
+.slick-slide {
+	transform: scale(0.8);
+	transition: all 0.4s ease-in-out;
+	padding: 40px 0;
+}
+
+
+.slick-slide img {
+	max-width: 100%;
+	transition: all 0.4s ease-in-out;
+}
+
+.slick-center {
+	transform: scale(1.1);
+}
+
+.btn-outline-secondary:hover {
+    border-color: #4CAF50; /* Green color */
+    color: #4CAF50; /* Text color */
+  }

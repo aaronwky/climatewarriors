@@ -1,0 +1,59 @@
+<html lang="en" data-bs-theme = "light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- VUE -->
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <script src="tableau.js"></script>
+
+    <!-- Slick Slide -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" href="customer_home.css" />
+    <style>
+        .navbar-nav {
+          display: flex;
+          justify-content: space-between;
+          flex-grow: 1;
+        }
+      
+        body {
+          overflow-x: hidden;
+        }
+      
+        .btn-outline-secondary:hover {
+          border-color: #506ea6; 
+          color: #506ea6; 
+          background-color: transparent !important;
+        }
+      
+      </style>
+  
+</head>
+<body>
+
+<div id="root">
+    <div style="background-color: #aac8f0; overflow: hidden; margin-bottom: 30px; padding:10px;">
+        <a href="customer_overview.html" style="float: left; display: block; color: #000000; text-align: center; padding: 14px 16px; text-decoration: none;">Home</a>
+        <a href="reward.html" style="float: left; display: block; color: #000000; text-align: center; padding: 14px 16px; text-decoration: none;">Progress rewards</a>
+        <a href="customer_dashboard.html" style="float: left; display: block; color: #000000; text-align: center; padding: 14px 16px; text-decoration: underline; font-weight: bold;">Dashboard</a>
+        <a href="qrcode.html" style="float: left; display: block; color: #000000; text-align: center; padding: 14px 16px; text-decoration: none;">QR Code</a>
+      </div>
+</div>
+    
+<body onload="initViz();">
+   
+<div id="tableauViz" style="margin:auto; display:flex; justify-content: center; text-align:center; width:1500px; height: 1000px;"></div> 
+
+
+</body>
+</html>

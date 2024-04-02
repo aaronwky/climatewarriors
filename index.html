@@ -14,8 +14,11 @@
             // Check if the username and password match the authentication criteria
             if (username === "enerprof" && password === "12345") {
                 alert("Login successful!");
-                // You can redirect to another page using window.location.href = "homepage.html";
                 window.location.href = "overview.html";
+            } 
+            else if (username === "CLM1001" && password === "12345") {
+                alert("Login successful!");
+                window.location.href = "customer_overview.html";
             } else {
                 // If not authenticated, display an error message
                 alert("Invalid username or password. Please try again.");
