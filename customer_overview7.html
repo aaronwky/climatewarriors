@@ -1,0 +1,131 @@
+<html lang="en" data-bs-theme = "light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- VUE -->
+    <script src="https://unpkg.com/vue@next"></script>
+    
+    <!-- Slick Slide -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" href="customer_home.css" />
+    <style>
+        .navbar-nav {
+          display: flex;
+          justify-content: space-between;
+          flex-grow: 1;
+        }
+      
+        body {
+          overflow-x: hidden;
+        }
+      
+        .btn-outline-secondary:hover {
+          border-color: #506ea6; 
+          color: #506ea6; 
+          background-color: transparent !important;
+        }
+      
+      </style>
+  
+</head>
+<body>
+<div id="root">
+    <!--  -->
+    <!-- ENTER CONTENT-->
+    <!--  -->
+    <!-- Navbar -->
+    <div style="background-color: #aac8f0; overflow: hidden; margin-bottom: 30px; padding:10px;">
+        <a href="home.html" style="float: left; display: block; color: #000000; text-align: center; padding: 14px 16px; text-decoration: underline; font-weight: bold;">Home</a>
+        <a href="reward7.html" style="float: left; display: block; color: #000000; text-align: center; padding: 14px 16px; text-decoration: none;">Progress rewards</a>
+        <a href="customer_dashboard7.html" style="float: left; display: block; color: #000000; text-align: center; padding: 14px 16px; text-decoration: none;">Dashboard</a>
+        <a href="qrcode7.html" style="float: left; display: block; color: #000000; text-align: center; padding: 14px 16px; text-decoration: none;">QR Code</a>
+      </div>
+
+          <!-- Carousel -->
+<div class="container-fluid whitecontainer" style="margin-bottom:30px;">
+    <div class="row align-items-center">
+        <!-- Left Side Text -->
+        <div class="col-sm-12 col-md-5 text-light text-center">
+            <div class="container w-80">
+                <h1 class="display-5">
+                    <strong>
+                        <span class="hover" style="color: black;">Welcome</span>
+                    </strong>
+                </h1>
+            </div>
+            <div class="container w-80">
+                <h1 class="display-2"><strong>
+                    <span class="hover" style="color: black;">Climate Warriors</span>
+                </strong></h1>
+            </div>
+            <div class="container text-center my-3">
+                <a href="customer_dashboard.html" class="btn btn-outline-secondary">View Dashboard</a>
+            </div>
+        </div>
+        <!-- Right Side Images -->
+        <div class="col-md-7 d-md-block d-none">
+          <!-- Insert your images here -->
+          <div class="row no-gutters">
+              <div class="col-md-6 mb-3">
+                  <img src="images/home1.webp" class="img-fluid" alt="Image 1" style="width: 100%; display: block;">
+              </div>
+              <div class="col-md-6 mb-3">
+                  <img src="images/home2.jpg" class="img-fluid" alt="Image 2" style="width: 100%; display: block;">
+              </div>
+              
+          </div>
+      </div>
+        </div>
+    </div>
+</div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+      $(document).ready(function () {
+      $(".slider").slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        speed: 500,
+        autoplaySpeed: 2000,
+        infinite: true,
+        autoplay: true,
+        centerMode: true,
+        centerPadding: "0",
+        dots: false,
+        prevArrow: false,
+        nextArrow: false
+      });
+    });
+  </script>
+          </div> 
+      </div>
+  </div>
+
+    <!--add a line seperator here-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <hr style="border-top: 1px solid #4a694c; width:90%; display:flex; margin:auto;">
+        </div>
+      </div>
+
+</div>
+</body>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/color-modes.js"></script>
+<script src="../components.vue"></script>
+<script src="../sessionstorage.js"></script>
+</html>

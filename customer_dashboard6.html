@@ -12,7 +12,9 @@
     
     <!-- VUE -->
     <script src="https://unpkg.com/vue@next"></script>
-    
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <script src="tableau.js"></script>
+
     <!-- Slick Slide -->
     <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <!-- Add the slick-theme.css if you want default styling -->
@@ -40,18 +42,18 @@
 <body>
 
 <div id="root">
-    <!--  -->
-    <!-- ENTER CONTENT-->
-    <!--  -->
-    <!-- Navbar -->
     <div style="background-color: #aac8f0; overflow: hidden; margin-bottom: 30px; padding:10px;">
-        <a href="customer_overview.html" style="float: left; display: block; color: #000000; text-align: center; padding: 14px 16px; text-decoration: none;">Home</a>
-        <a href="reward.html" style="float: left; display: block; color: #000000; text-align: center; padding: 14px 16px; text-decoration: none;">Progress rewards</a>
-        <a href="customer_dashboard.html" style="float: left; display: block; color: #000000; text-align: center; padding: 14px 16px; text-decoration: none;">Dashboard</a>
-        <a href="qrcode.html" style="float: left; display: block; color: #000000; text-align: center; padding: 14px 16px; text-decoration: underline; font-weight: bold;">QR Code</a>
+        <a href="customer_overview6.html" style="float: left; display: block; color: #000000; text-align: center; padding: 14px 16px; text-decoration: none;">Home</a>
+        <a href="reward6.html" style="float: left; display: block; color: #000000; text-align: center; padding: 14px 16px; text-decoration: none;">Progress rewards</a>
+        <a href="customer_dashboard6.html" style="float: left; display: block; color: #000000; text-align: center; padding: 14px 16px; text-decoration: underline; font-weight: bold;">Dashboard</a>
+        <a href="qrcode6.html" style="float: left; display: block; color: #000000; text-align: center; padding: 14px 16px; text-decoration: none;">QR Code</a>
       </div>
 </div>
     
+<body onload="initViz();">
+   
+<div id="tableauViz" style="margin:auto; display:flex; justify-content: center; text-align:center; width:1500px; height: 1000px;"></div> 
+
 
 </body>
 </html>
